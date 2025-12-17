@@ -109,6 +109,9 @@ plt.grid(True, alpha=0.3)
 plt.savefig('QQ.pdf', format='pdf', dpi=300, bbox_inches='tight')
 plt.show()
 
+# At the end of OCV_GLM.py, add:
+__all__ = ['a', 'b', 'ocv_func']
+
 # Also print some statistics about residuals
 print(f"\nResidual Statistics:")
 print(f"Mean of residuals: {np.mean(residuals):.6f}")
